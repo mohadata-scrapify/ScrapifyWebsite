@@ -1,0 +1,41 @@
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background: #ffffff;
+  color: #111827;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ffffff;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+h1, h2 {
+  color: #111827;
+}
+
+.cta-button {
+  background: #1f2937;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1f2937;
+  color: #fff;
+}
