@@ -39,3 +39,14 @@ footer {
   background: #1f2937;
   color: #fff;
 }
+.brand-slider img {
+  height: 50px;
+  width: 120px;
+  margin: 0 1rem;
+  object-fit: contain;
+  object-position: center;
+  vertical-align: middle;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+}
