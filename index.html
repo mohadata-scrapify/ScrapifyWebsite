@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +31,7 @@
     }
 
     .logo {
-      max-height: 80px;
+      max-height: 60px;
     }
 
     .nav-menu {
@@ -83,7 +84,7 @@
     section {
       max-width: 960px;
       margin: auto;
-      padding: 3rem 1.5rem;
+      padding: 2rem 1.5rem;
     }
 
     h2 {
@@ -133,16 +134,20 @@
     .industry-list li {
       margin-bottom: 0.8rem;
     }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
 <header>
-  <div class="header-container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;">
-    <img src="assets/ScrapifyLogo.png" alt="Scrapify Logo" style="max-height: 48px; height: auto; width: auto; display: block; margin: 0; padding: 0;" />
+  <div class="header-container">
+    <img src="assets/ScrapifyLogo.png" alt="Scrapify Logo" class="logo" />
     <nav>
-      <ul class="nav-menu" style="list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0;">
+      <ul class="nav-menu">
         <li><a href="#services">Services</a></li>
         <li><a href="#industries">Industries</a></li>
         <li><a href="#about">About</a></li>
@@ -152,120 +157,116 @@
   </div>
 </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Transforming Web Data into Strategic Insights</h1>
-    <p>Scrapify delivers precise, scalable, and ethical data extraction solutions tailored to your business needs.</p>
-    <a href="#contact" class="cta-button">Request a Free Consultation</a>
-  </section>
+<section class="hero">
+  <h1>Transforming Web Data into Strategic Insights</h1>
+  <p>Scrapify delivers precise, scalable, and ethical data extraction solutions tailored to your business needs.</p>
+  <a href="#contact" class="cta-button">Request a Free Consultation</a>
+</section>
 
-  <!-- FEATURES -->
-  <section id="features">
-    <h2>Key Features</h2>
-    <ul>
-      <li><strong>Tailored Solutions:</strong> Customised scraping services aligning with your objectives.</li>
-      <li><strong>Scalable Infrastructure:</strong> Capable of handling projects of any size with efficiency.</li>
-      <li><strong>Ethical Practices:</strong> Committed to responsible and compliant data extraction.</li>
-    </ul>
-  </section>
+<section id="features">
+  <h2>Key Features</h2>
+  <ul>
+    <li><strong>Tailored Solutions:</strong> Customised scraping services aligning with your objectives.</li>
+    <li><strong>Scalable Infrastructure:</strong> Capable of handling projects of any size with efficiency.</li>
+    <li><strong>Ethical Practices:</strong> Committed to responsible and compliant data extraction.</li>
+  </ul>
+</section>
 
-  <!-- TESTIMONIAL -->
-  <section id="testimonials">
-    <h2>Client Testimonials</h2>
-    <blockquote>“Scrapify's expertise transformed our data strategy, delivering insights that propelled our growth.” – Jane Doe, CEO of DataCorp</blockquote>
-  </section>
+<section id="testimonials">
+  <h2>Client Testimonials</h2>
+  <blockquote>“Scrapify's expertise transformed our data strategy, delivering insights that propelled our growth.” – Jane Doe, CEO of DataCorp</blockquote>
+</section>
 
-  <!-- SERVICES -->
-  <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Custom Web Scraping</li>
-      <li>Real-Time Data APIs</li>
-      <li>Data Cleaning & Enrichment</li>
-      <li>Automated Monitoring</li>
-    </ul>
-  </section>
+<section id="services">
+  <h2>Services</h2>
+  <ul>
+    <li>Custom Web Scraping</li>
+    <li>Real-Time Data APIs</li>
+    <li>Data Cleaning & Enrichment</li>
+    <li>Automated Monitoring</li>
+  </ul>
+</section>
 
-   <!-- DELIVERY -->
-  <section id="delivery" style="background: #fff3ee; padding: 3rem 1.5rem;">
+<section id="delivery" style="background: #fff3ee;">
   <h2 style="text-align: center; color: #1f2937;">How We Deliver Your Data</h2>
   <p style="text-align: center; max-width: 800px; margin: 1rem auto; font-size: 1.1rem;">
     Scrapify offers flexible delivery options to suit your environment. Whether you want real-time API access or scheduled file drops to cloud storage, we’ve got you covered.
   </p>
-
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; max-width: 960px; margin: 2rem auto;">
     <div style="text-align: center;">
       <img src="https://img.icons8.com/ios-filled/50/api.png" alt="API" style="margin-bottom: 0.5rem;" />
       <h3>API Access</h3>
       <p>Secure API endpoints for on-demand data retrieval.</p>
     </div>
-
     <div style="text-align: center;">
       <img src="https://img.icons8.com/ios-filled/50/cloud-storage.png" alt="Cloud" style="margin-bottom: 0.5rem;" />
       <h3>Cloud Platforms</h3>
       <p>Data drops to Azure Data Lake, AWS S3, or Google Cloud.</p>
     </div>
-
     <div style="text-align: center;">
       <img src="https://img.icons8.com/ios-filled/50/new-post.png" alt="Email" style="margin-bottom: 0.5rem;" />
       <h3>Email Delivery</h3>
       <p>Structured files (CSV/JSON) delivered via secure email.</p>
     </div>
-
     <div style="text-align: center;">
       <img src="https://img.icons8.com/ios-filled/50/combo-chart.png" alt="Dashboard" style="margin-bottom: 0.5rem;" />
       <h3>BI Dashboards</h3>
       <p>Need visual insights? We can help build Power BI, Tableau, or Looker dashboards using your data.</p>
     </div>
   </div>
-
   <p style="text-align: center; font-style: italic;">Need something bespoke? Let us know — we’ll integrate with your workflow.</p>
 </section>
 
+<section id="brands" style="background: #ffffff; padding: 2rem 0;">
+  <h2 style="text-align: center; color: #1f2937;">Brands We Monitor</h2>
+  <div style="overflow: hidden; white-space: nowrap; animation: scroll-left 30s linear infinite; padding: 1.5rem 0;">
+    <img src="assets/Miele_Logo.png" alt="Miele" style="height: 40px; margin: 0 2rem;" />
+    <img src="assets/Thermador_Logo.png" alt="Thermador" style="height: 40px; margin: 0 2rem;" />
+    <img src="assets/Subzero_Logo.png" alt="Subzero" style="height: 40px; margin: 0 2rem;" />
+    <img src="assets/Monogram_Logo.png" alt="Monogram" style="height: 40px; margin: 0 2rem;" />
+    <img src="assets/Wolf_Logo.png" alt="Wolf" style="height: 40px; margin: 0 2rem;" />
+    <img src="assets/Fisherpaykel_Logo.png" alt="Fisher & Paykel" style="height: 40px; margin: 0 2rem;" />
+  </div>
+</section>
 
-  <!-- INDUSTRIES -->
-  <section id="industries">
-    <h2>Industries We Serve</h2>
-    <p><strong>Home Appliance Retail & Manufacturing</strong></p>
-    <ul class="industry-list">
-      <li><strong>Competitor Price Tracking:</strong> Daily insights into product pricing across major retailers.</li>
-      <li><strong>Product Availability Monitoring:</strong> Track when appliances go in or out of stock.</li>
-      <li><strong>Customer Review Analysis:</strong> Understand customer sentiment to guide product improvement.</li>
-      <li><strong>Market & Range Intelligence:</strong> Compare models, SKUs, and specifications.</li>
-      <li><strong>Promotion Tracking:</strong> Monitor competitor discount cycles and marketing campaigns.</li>
-    </ul>
-  </section>
+<section id="industries">
+  <h2>Industries We Serve</h2>
+  <p><strong>Home Appliance Retail & Manufacturing</strong></p>
+  <ul class="industry-list">
+    <li><strong>Competitor Price Tracking:</strong> Daily insights into product pricing across major retailers.</li>
+    <li><strong>Product Availability Monitoring:</strong> Track when appliances go in or out of stock.</li>
+    <li><strong>Customer Review Analysis:</strong> Understand customer sentiment to guide product improvement.</li>
+    <li><strong>Market & Range Intelligence:</strong> Compare models, SKUs, and specifications.</li>
+    <li><strong>Promotion Tracking:</strong> Monitor competitor discount cycles and marketing campaigns.</li>
+  </ul>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>At Scrapify, we're passionate about transforming the vast expanse of web data into actionable insights. Our team of experts leverages cutting-edge technology to deliver customised, ethical, and efficient data extraction services. We believe in transparency, compliance, and delivering tangible value through clean, reliable data.</p>
-  </section>
+<section id="about">
+  <h2>About Us</h2>
+  <p>At Scrapify, we're passionate about transforming the vast expanse of web data into actionable insights. Our team of experts leverages cutting-edge technology to deliver customised, ethical, and efficient data extraction services. We believe in transparency, compliance, and delivering tangible value through clean, reliable data.</p>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> support@scrapify.info</p>
-    <p><strong>Address:</strong> Level 18 40 Bank Street, Canary Wharf, London, England, E14 5NR</p>
 
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" />
+<section id="contact">
+  <h2>Contact</h2>
+  <form action="https://formspree.io/f/xldberol" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4"></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
 
-      <button type="submit" class="cta-button">Send Message</button>
-    </form>
-  </section>
+    <button type="submit" class="cta-button">Send Message</button>
+  </form>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Scrapify. All rights reserved.</p>
-  </footer>
+
+<footer>
+  <p>&copy; 2025 Scrapify. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
