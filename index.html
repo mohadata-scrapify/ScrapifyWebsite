@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,140 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Scrapify | Web Data Solutions</title>
   <style>
-    :root {
-      --primary: #FF5722;
-      --dark: #1f2937;
-      --light: #f8f9fa;
-    }
+:root {
+  --primary: #FF5722;
+  --dark: #1f2937;
+  --light: #f8f9fa;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-      background: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
-    }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
 
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #ffffff;
-      border-bottom: 1px solid #e0e0e0;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
-    }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
 
-    .logo {
-      max-height: 60px;
-    }
+.logo {
+  max-height: 60px;
+}
 
-    .nav-menu {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      margin: 0;
-      padding: 0;
-    }
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
 
-    .nav-menu li a {
-      text-decoration: none;
-      color: var(--dark);
-      font-weight: 500;
-    }
+.nav-menu li a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
 
-    .nav-menu li a:hover {
-      color: var(--primary);
-    }
+.nav-menu li a:hover {
+  color: var(--primary);
+}
 
-    .hero {
-      background: #fff3ee;
-      padding: 4rem 2rem;
-      text-align: center;
-    }
+.hero {
+  background: #fff3ee;
+  padding: 1.5rem 1rem 1rem;
+  text-align: center;
+  margin: 0;
+}
 
-    .hero h1 {
-      font-size: 2.5rem;
-      color: var(--dark);
-    }
+.hero h1 {
+  font-size: 2.2rem;
+  color: var(--dark);
+  margin: 0.5rem 0;
+}
 
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      color: #333;
-    }
+.hero p {
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
+  color: #333;
+}
 
-    .cta-button {
-      background: var(--primary);
-      color: #fff;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 1.5rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+.cta-button {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-    section {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem 1.5rem;
-    }
+section {
+  max-width: 960px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+}
 
-    h2 {
-      font-size: 1.8rem;
-      color: var(--dark);
-      margin-bottom: 1rem;
-    }
+section#features {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
 
-    ul {
-      padding-left: 1.2rem;
-    }
+h2 {
+  font-size: 1.8rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
 
-    li {
-      margin: 0.5rem 0;
-    }
+ul {
+  padding-left: 1.2rem;
+}
 
-    blockquote {
-      font-style: italic;
-      background: #fff;
-      padding: 1rem;
-      border-left: 4px solid var(--primary);
-      margin: 2rem 0;
-    }
+li {
+  margin: 0.5rem 0;
+}
 
-    form label {
-      display: block;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
+.brand-slider {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 30s linear infinite;
+}
 
-    form input, form textarea {
-      width: 100%;
-      padding: 0.7rem;
-      margin-top: 0.3rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
+.brand-slider img {
+  height: 50px;
+  width: 120px;
+  margin: 0 1rem;
+  object-fit: contain;
+  object-position: center;
+  vertical-align: middle;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+}
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: var(--dark);
-      color: #fff;
-      margin-top: 2rem;
-    }
-
-    .industry-list li {
-      margin-bottom: 0.8rem;
-    }
-
-    @keyframes scroll-left {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-  </style>
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
 </head>
 <body>
 
@@ -163,7 +153,6 @@
   <p><strong>Track real-time pricing changes and monitor customer reviews</strong> across leading appliance brands to stay competitive and informed.</p>
   <a href="#contact" class="cta-button">Request a Free Consultation</a>
 </section>
-
 
 <section id="features">
   <h2>Key Features</h2>
