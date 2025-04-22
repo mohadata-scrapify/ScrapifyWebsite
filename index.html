@@ -221,36 +221,61 @@
   <div style="max-width: 960px; margin: auto;">
     <h2 style="text-align: center; color: #1f2937;">Brands We Monitor</h2>
     <div style="overflow: hidden; width: 100%;">
-      <div style="
-        display: inline-block;
-        white-space: nowrap;
-        animation: scroll-left 25s linear infinite;
-        padding: 1rem 0;
-      ">
-        <img src="assets/Bosch_Logo.png" alt="Bosch" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Electrolux_Logo.png" alt="Electrolux" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Fisherpaykel_Logo.png" alt="Fisher & Paykel" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/LG_Logo.png" alt="LG" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Miele_Logo.png" alt="Miele" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Monogram_Logo.png" alt="Monogram" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Neff_Logo.png" alt="Neff" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Samsung_Logo.png" alt="Samsung" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Siemens_Logo.png" alt="Siemens" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Subzero_Logo.png" alt="Subzero" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Thermador_Logo.png" alt="Thermador" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Whirlpool_Logo.png" alt="Whirlpool" style="height: 40px; margin: 0 2rem;" />
-        <img src="assets/Wolf_Logo.png" alt="Wolf" style="height: 40px; margin: 0 2rem;" />
+      <div class="brand-slider">
+        <!-- Logos (repeated twice for seamless loop) -->
+        <img src="assets/Bosch_Logo.png" alt="Bosch" />
+        <img src="assets/Electrolux_Logo.png" alt="Electrolux" />
+        <img src="assets/Fisherpaykel_Logo.png" alt="Fisher & Paykel" />
+        <img src="assets/LG_Logo.png" alt="LG" />
+        <img src="assets/Miele_Logo.png" alt="Miele" />
+        <img src="assets/Monogram_Logo.png" alt="Monogram" />
+        <img src="assets/Neff_Logo.png" alt="Neff" />
+        <img src="assets/Samsung_Logo.png" alt="Samsung" />
+        <img src="assets/Siemens_Logo.png" alt="Siemens" />
+        <img src="assets/Subzero_Logo.png" alt="Subzero" />
+        <img src="assets/Thermador_Logo.png" alt="Thermador" />
+        <img src="assets/Whirlpool_Logo.png" alt="Whirlpool" />
+        <img src="assets/Wolf_Logo.png" alt="Wolf" />
+
+        <!-- Duplicate for infinite scroll -->
+        <img src="assets/Bosch_Logo.png" alt="Bosch" />
+        <img src="assets/Electrolux_Logo.png" alt="Electrolux" />
+        <img src="assets/Fisherpaykel_Logo.png" alt="Fisher & Paykel" />
+        <img src="assets/LG_Logo.png" alt="LG" />
+        <img src="assets/Miele_Logo.png" alt="Miele" />
+        <img src="assets/Monogram_Logo.png" alt="Monogram" />
+        <img src="assets/Neff_Logo.png" alt="Neff" />
+        <img src="assets/Samsung_Logo.png" alt="Samsung" />
+        <img src="assets/Siemens_Logo.png" alt="Siemens" />
+        <img src="assets/Subzero_Logo.png" alt="Subzero" />
+        <img src="assets/Thermador_Logo.png" alt="Thermador" />
+        <img src="assets/Whirlpool_Logo.png" alt="Whirlpool" />
+        <img src="assets/Wolf_Logo.png" alt="Wolf" />
       </div>
     </div>
   </div>
 </section>
 
 <style>
+.brand-slider {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 30s linear infinite;
+}
+
+.brand-slider img {
+  height: 40px;
+  margin: 0 2rem;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
 @keyframes scroll-left {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 </style>
+
 
 
 <section id="industries">
